@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Patrick Portfolio</title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+  <!-- EMAILJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("n4QGe5NY3jRTx2mhs");
+   })();
+</script>  
+<!-- EMAILJS -->
+
+
+
+
+
+</head>
+<body>
+
+	<!---header--->
+	<header class="head">
+		<a href="#" class="logo"><img draggable="false"  src="img/logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#myplang">Languages</a></li>
+			<li><a href="#services">Services</a></li>
+			<!-- <li><a href="#portfolio">My Portfolio</a></li> -->
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+
+	<!---home--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h4>Hello</h4>
+			<h1>I'm Patrick</span></h1>
+			<div class="row-outer">
+				<div class="container">
+				  <div class="animated-heading">
+					<h3>and i'm a <span id="words">Ui / UX Design</span></h3>
+				  </div>
+				</div>
+			  </div>
+			  <script type="text/javascript">
+				(function () {
+				  var words = ["UX / Ui Design","Editor","Developer","Graphic Designer"],
+				  i = 0;
+				  setInterval(function(){ $('#words').fadeOut(function(){
+					  $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+					}); }, 3000)
+				})();
+			  </script>
+			<!-- <h3>Front-End Developer</h3> -->
+			<!-- <a href="#" class="btn">Hire Me</a> -->
+		</div>
+	</section>
+
+	<!---about--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img draggable="false"  src="" id="aboutimage">
+			<!--<img draggable="false"  src="img/about.png" style="display: none">
+			<img draggable="false"  src="img/about2.png" style="display: none">
+			<img draggable="false"  src="img/about3.png" style="display: none"> -->
+		</div>
+
+		<div class="about-text">
+			<h2>About Me</h2>
+			<h4>Hi! I'm here to help you create your next project.</h4>
+			<p>Hey there! I'm a jack-of-all-trades developer with a passion for creating awesome software and apps, designing killer websites, and mastering the art of video and photo editing. My skills include HTML, CSS, JavaScript, and I'm always looking to expand my toolkit with new languages ​​like Python, C#, and Lua. If you're looking for a one-stop-shop for all your development needs, look no further! Check out <a href="#services" class="footer__text"> my services.</a> and let's make something awesome together.</p>
+			<div class="about-gri">
+				<div class="about-in">
+					<h5>1. Multi-skilled</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>2. Technical</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>3. Adaptable</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>4. Versatile</h5>
+				</div>
+
+			</div>
+			<a href="#contact" class="btn">Contact Me</a>
+		</div>
+	</section>
+
+	<section class="portfolio" id="myplang">
+		<div class="main-text">
+			<h2>My Programming Languages</h2>
+		</div>
+		
+		<div class="portfolio-content">
+			<div class="row">
+				<img draggable="false"  src="img/portfolio1.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently <b>Know</b></h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>HTML</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio2.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently Know</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>CSS</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio3.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently Know</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>JavaScript</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio4.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently learning</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Python</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio5.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently learning</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Lua</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio6.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Currently learning</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>C#</h3>
+			</div>
+
+		</div>
+
+
+	</section>
+	
+	<!---services--->
+	<section class="services" id="services">
+		<div class="main-text">
+			<h2>My Services</h2>
+			<!-- <h4>Great developer = Great project</h4> -->
+			<h4><span id="serviceswords">Apps and websites, built to perfection</span></h4>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<img draggable="false"  src="img/serv1.png">
+				<h3>Software & App Developer</h3>
+				<p>Hey there! I'm a software and app whiz who loves nothing more than tackling tricky challenges and coming up with fresh solutions. My ePortfolio is like a highlight reel of my mad skills, killer creativity, and the dope projects I've brought to life. Take a gander and see for yourself, I promise you won't be disappointed!</p>
+			</div>
+
+			<div class="box">
+				<img draggable="false"  src="img/serv2.png">
+				<h3>Website Design</h3>
+				<p>What's up, I'm a web design wizard with an eye for the finer things and a talent for making brands pop. My ePortfolio is like a window into my design magic, it's packed with responsive, visually delicious websites I've crafted for some pretty cool clients. Check it out and get ready to be wowed!</p>
+			</div>
+
+			<div class="box">
+				<img draggable="false"  src="img/serv3.png">
+				<h3>Video & Photo Editing</h3>
+				<p>Sup! I'm a video and photo editing ninja with a knack for taking raw footage and images and turning them into cinematic masterpieces. My ePortfolio is like a behind-the-scenes look at my editing skills and the sick projects I've brought to life. Take a look, it'll be like watching a movie... but better!</p>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- -portfolio--->
+	<!-- <section class="portfolio" id="portfolio">
+		<div class="main-text">
+			<h2>My coding languages</h2>
+			<h4>Some Of My Distinguished Works</h4>
+		</div>
+
+		<div class="portfolio-content">
+			<div class="row">
+				<img draggable="false"  src="img/portfolio1.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio2.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio3.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio4.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio5.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+			<div class="row">
+				<img draggable="false"  src="img/portfolio6.jpg">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>Development</h6>
+					</div>
+					<div class="row-icon">
+						<i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>Mobile app landing design & Services</h3>
+			</div>
+
+		</div>
+	</section> -->
+
+	<!---contact--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Greetings! Don't be shy, hit me up via email. I promise I won't bite (unless you want me to, then we can work something out ;)) Let's chat and make awesome stuff together!</h4>
+			<!-- <p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p> -->
+			<div class="contact-list">
+				<li>Patrick.</li>
+				<li><a href="mailto:patricks4115@gmail.com" target="_blank">patricks4115@gmail.com</a></li>
+				<!-- <li><a href="#">01646895741</a></li> -->
+			</div>
+			<div class="contact-icons">
+				<a href="https://github.com/MPatrick5" target="_blank"><svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
+					<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+				</svg></a>
+				<!-- <a href="#"><i class='bx bxl-facebook' ></i></a>
+				<a href="#"><i class='bx bxl-behance' ></i></a>
+				<a href="#"><i class='bx bxl-instagram' ></i></a>
+				<a href="#"><i class='bx bxl-dribbble' ></i></a> -->
+			</div>
+		</div>
+
+		<div class="contact-form">
+			<form id="myForm" action="">
+				<input name="user_name" id="user_name" type="text" placeholder="Enter Your Name" required>
+				<input name="user_subject" id="user_subject" type="text" placeholder="Enter Your Subject" required>
+				<input name="user_email" id="user_email" type="email" placeholder="Enter Your Email" required>
+				<textarea id="message" name="message"  cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				<input onclick="contact()" type="submit" value="Submit" class="send">
+			</form>
+		</div>
+	</section>
+
+	<div class="last-text">
+		<p>Patrick copyright © 2022</p>
+	</div>
+
+	<!---scroll-top--->
+	<a href="#" id="myBtn" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+	<a href="#" id="myBtnphone" class="topphone"><i class='bx bx-up-arrow-alt' ></i></a>
+<!-- 
+	<button onclick="topFunction()" class="top" id="myBtn" ><i class='bx bx-up-arrow-alt' ></i></button>  -->
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<!---custom js link--->
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
